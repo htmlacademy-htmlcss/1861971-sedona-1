@@ -20,21 +20,40 @@ body {
   line-height: 21px;
 }
 
+:root {
+  /*font-color*/
+  --texts-texts-basic: #00000;
+  --texts-second: #33333;
+  --texts-background-deafault: #FFFFFF;
+
+  /*background-color*/
+  --icons-text: #7DB54F;
+  --buttons-basic: #756157;
+  --background-basic-3: #82B3D3;
+  --background-second-1: rgba(131, 179, 211, 0.12);
+  --background-second-2: rgba(131, 179, 211, 0.20);
+  --the-background: #FAEBD7;
+  --forms-elements-2: #F2F2F2;
+  --buttons-select: #7DB54F;
+}
+
+/*header-section in index.html*/
+
 .navigation-link {
-font-size: 20px;
-line-height: 24px;
-font-weight: 700;
-text-align: center;
-text-decoration: none;
-color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: var(--texts-texts-basic);
 }
 
 .favorites-counter {
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
-  color: #FFF;
-  background-color: #7DB54F;
+  color: var(--texts-background-deafault);
+  background-color: var(--icons-text);
 }
 
 .navigation-button-link {
@@ -43,20 +62,20 @@ color: #000;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: #FFF;
-  background-color: #756157;
+  color: var(--texts-background-deafault);
+  background-color: var(--buttons-basic);
 }
 
+/*picture-section in index.html*/
+
 .picture {
-  background-color: #faebd7;
+  background-color: var(--the-background);
   background-image: url("../images/index-page/picture-section/index-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.header-picture-rocks {
-  background-position: center;
-}
+/*first-section-paragraphs in index.html*/
 
 .exclamation-paragraphs {
   text-align: center;
@@ -65,13 +84,17 @@ color: #000;
 .semantic-emphasis {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
+  color: var(--texts-texts-basic);
 }
 
 .exclamation-paragraph {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
+  color: var(--texts-second);
 }
+
+/*advantages-section in index.html*/
 
 .advantages {
   text-align: center;
@@ -81,30 +104,27 @@ color: #000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: var(--texts-texts-basic);
+}
+
+.turquoise-background-color {
+  color: var(--texts-background-deafault);
+  background-color: var(--background-basic-3);
+}
+
+.light-turquoise-background-color {
+  background-color: var(--background-second-1);
+}
+
+.meddle-turquoise-background-color {
+  background-color: var(--background-second-2);
 }
 
 .advantages-description {
-  font-weight: 400;
+  color: var(--texts-second);
 }
 
-.advantages-item-first-list {
-  color: #FFF;
-  background-color: #82B3D3;
-}
-
-.advantages-item-second-list {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-third-list {
-  background-color: rgba(131, 179, 211, 0.20);
-}
-
-.subscribe-title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
+/*second-section-paragraphs in index.html*/
 
 .hotel-search {
   font-size: 20px;
@@ -112,28 +132,33 @@ color: #000;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
-  color: #FFF;
-  background-color: #756157;
+  color: var(--texts-background-deafault);
+  background-color: var(--buttons-basic);
 }
 
+/*subscribe-section in index.html*/
+
 .subscribe {
-  background-color: #faebd7;
+  background-color: var(--the-background);
   background-image: url("../images/index-page/subscribe-section/photo-subscribe.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  color: var(--texts-background-deafault);
 }
 
 .submit {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: #FFF;
-  background-color: #82B3D3;
+  color: var(--texts-background-deafault);
+  background-color: var(--background-basic-3);
   background-size: 100% 100%;
 }
 
+/*footer-section in index.html*/
+
 .button {
-  color: #000;
+  color: var(--texts-texts-basic);
   text-decoration: none;
 }
 
@@ -141,123 +166,120 @@ color: #000;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-  color: #000;
+  color: var(--texts-texts-basic);
   text-decoration: none;
 }
 
+/*filter-section in catalog.html*/
+
 .filter-catalog {
-  background-color: #faebd7;
+  background-color: var(--the-background);
   background-image: url("../images/catalog-page/inner-header/header-image.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  color: var(--texts-background-deafault);
 }
 
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  color: #FFF;
 }
 
 .path-link {
   font-size: 16px;
-  font-weight: 400;
-  color: #FFF;
   text-decoration: none;
+  color: var(--texts-background-deafault);
 }
 
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color: #FFF;
 }
 
 .catalog-filter-list {
-  font-size: 18px;
-  font-weight: 400;
   line-height: 23px;
-  color: #FFF;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--texts-background-deafault);
 }
 
 .apply-button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFF;
-  background-color: #82B3D3;
+  background-color: var(--background-basic-3);
 }
 
-.reset-button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFF;
-}
+/*sorting-section in catalog.html*/
 
 .counter {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: var(--texts-texts-basic);
 }
 
-.cheap {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
+.select-control {
+  color: var(--texts-second);
 }
+
+/*accommodation-section in catalog.html*/
 
 .accommodation-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: var(--texts-texts-basic);
 }
 
 .description-list {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  color: var(--texts-second);
+}
+
+.button-control-accommodation {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .button-details {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFF;
-  background-color: #756157;
-  text-decoration: none;
+  background-color: var(--buttons-basic);
 }
 
 .button-favorites {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFF;
-  background-color: #82B3D3;
-  text-decoration: none;
+  background-color: var(--background-basic-3);
 }
 
-.film-rating__score {
+.rating-score {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
-  background-color: #F2F2F2;
+  background-color: var(--forms-elements-2);
 }
 
 .selected {
-  background-color: #7DB54F;
+  background-color: var(--buttons-select);
 }
+
+/*pagination-section in catalog.html*/
 
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  background-color: #82B3D3;
+  color: var(--texts-background-deafault);
+  background-color: var(--background-basic-3);
   text-decoration: none;
-  color: #FFF;
 }
 
 .pagination-current {
-  background-color: #F2F2F2;
-  color: #000;
+  background-color: var(--forms-elements-2);
+  color: var(--texts-texts-basic);
 }
