@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <a class="" href="index.html">
         <img src="images/header/logo-header.svg" width="140" height="70" alt="Логотип города Седона.">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -16,7 +19,7 @@
             <a class="navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -28,16 +31,18 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favorites-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-button-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-inner">
+    <div class="filter-catalog">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="path">
@@ -47,7 +52,7 @@
             </a>
           </li>
           <li class="path-item">
-            <a class="path-link" href="catalog.html" aria-current="page">Каталог</a>
+            <a class="path-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -103,10 +108,11 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <button class="apply-button button-text" type="submit">Применить</button>
+          <button class="reset-button button-text" type="reset">Сбросить</button>
         </form>
       </section>
+    </div>
 
       <section class="sorting">
         <h2 class="visually-hidden">Панель сортировка</h2>
@@ -114,6 +120,7 @@
           <strong class="counter">Найдено гостиниц: 38</strong>
           <select class="select-control" aria-label="Сортировка">
             <option class="cheap" value="Сначала дешевые">Сначала дешевые</option>
+            <option class="cheap" value="Сначала дешевые">По рейтингу</option>
           </select>
           <button class="button arrange-tiles" type="button">
             <span class="visually-hidden">Расположить список предложений плитками</span>
@@ -127,7 +134,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="sorting">
         <h2 class="visually-hidden">Список размещения</h2>
         <ul class="accommodation-list">
           <li class="accommodation-item">
@@ -137,10 +144,10 @@
               <dt class="name-plase">Гостиница</dt>
               <dd class="prise">От 4000 ₽</dd>
             </dl>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">в избранное</a>
+            <a class="button-details button-control-accommodation" href="#">подробнее</a>
+            <a class="button-favorites button-control-accommodation" href="#">в избранное</a>
             <span class="visually-hidden">Гостиница четыре звезды.</span>
-            <div class="film-rating__score">Рейтинг: 8,5</div>
+            <div class="rating-score">Рейтинг: 8,5</div>
           </li>
           <li class="accommodation-item">
             <img class="accommodation-plase" src="images/catalog-page/accommodation/hotel-2.jpg" width="300" height="212" alt="">
@@ -149,10 +156,10 @@
               <dt class="name-plase">Гостиница</dt>
               <dd class="prise">От 5000 ₽</dd>
             </dl>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">в избранное</a>
+            <a class="button-details button-control-accommodation" href="#">подробнее</a>
+            <a class="selected button-favorites button-control-accommodation" href="#">в избранное</a>
             <span class="visually-hidden">Гостиница четыре звезды.</span>
-            <div class="film-rating__score">Рейтинг: 9,2</div>
+            <div class="rating-score">Рейтинг: 9,2</div>
           </li>
           <li class="accommodation-item">
             <img class="accommodation-plase" src="images/catalog-page/accommodation/hotel-3.jpg" width="300" height="212" alt="">
@@ -161,10 +168,10 @@
               <dt class="name-plase">Гостиница</dt>
               <dd class="prise">От 2500 ₽</dd>
             </dl>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">в избранное</a>
+            <a class="button-details button-control-accommodation" href="#">подробнее</a>
+            <a class="button-favorites button-control-accommodation" href="#">в избранное</a>
             <span class="visually-hidden">Гостиница три звезды.</span>
-            <div class="film-rating__score">Рейтинг: 6,9</div>
+            <div class="rating-score">Рейтинг: 6,9</div>
           </li>
           <li class="accommodation-item">
             <img class="accommodation-plase" src="images/catalog-page/accommodation/hotel-4.jpg" width="300" height="212" alt="">
@@ -173,10 +180,10 @@
               <dt class="name-plase">Гостиница</dt>
               <dd class="prise">От 1500 ₽</dd>
             </dl>
-            <a class="button" href="#">подробнее</a>
-            <a class="button" href="#">в избранное</a>
+            <a class="button-details button-control-accommodation" href="#">подробнее</a>
+            <a class="button-favorites button-control-accommodation" href="#">в избранное</a>
             <span>Гостиница две звезды.</span>
-            <div class="film-rating__score">Рейтинг: 5,0</div>
+            <div class="rating-score">Рейтинг: 5,0</div>
           </li>
         </ul>
       </section>
@@ -185,7 +192,7 @@
         <h2 class="visually-hidden">Пагинация</h2>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">1</a>
+              <a class="pagination-current  pagination-link" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -196,8 +203,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
-                <span class="button">...</span>
+            <li class="dots">
+                <span class="">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -205,13 +212,13 @@
           </ul>
       </section>
 
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <section class="subscription advantages">
+        <h2 class="semantic-emphasis">Подпишитесь на рассылку</h2>
         <p class="exclamation-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-for-email">
             <input type="email" name="email" placeholder="Ваш e-mail" autocomplete="off"  required>
-            <button type="submit">Подписаться</button>
+            <button class="submit" type="submit">Подписаться</button>
           </p>
         </form>
       </section>
