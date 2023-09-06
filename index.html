@@ -34,34 +34,35 @@
               <span class="favorites-counter">12</span>
             </a>
           </li>
+          <li class="navigation-item-icon">
+            <a class="navigation-button-link" href="#">Хочу сюда!</a>
+          </li>
         </ul>
-        <a class="navigation-button-link" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
-    <main class="homepage-blog">
-      <div class="container">
-      <h1 class="visually-hidden">Город Седона</h1>
+    <main class="homepage-blog ">
+      <h1 class="visually-hidden" hidden>Город Седона</h1>
 
       <section class="picture">
-        <h2 class="visually-hidden">Вступление</h2>
+        <h2 class="visually-hidden" hidden>Вступление</h2>
         <img class="header-picture-rocks" src="images/index-page/picture-section/header-image.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona 'Becouse the Grand Canyon sucrs!'.">
       </section>
 
       <section class="exclamation-paragraphs">
-        <h2 class="visually-hidden">О городе Седона</h2>
+        <h2 class="visually-hidden" hidden>О городе Седона</h2>
         <strong class="semantic-emphasis">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</strong>
         <p class="exclamation-paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества и главные достопримечательности</h2>
+        <h2 class="visually-hidden" hidden>Преимущества и главные достопримечательности</h2>
         <ul class="advantages-list">
           <li class="advantages-item turquoise-background-color">
+            <div class="advantages-item">
             <h3 class="advantages-title">Настоящий<br>городок</h3>
             <p class="advantages-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
-          </li>
-          <li>
+            </div>
             <img class="sedona" src="images/index-page/advantages-section-one/photo-1.jpg" width="800" height="385" alt="Двух этажные дома выполнены в стиле Дикого Запада. Посередине небольшой парк с расположенными на нем деревья, цветущими кустарниками и оборудованным местом для кемпинга.">
           </li>
           <li class="advantages-item light-turquoise-background-color">
@@ -76,12 +77,12 @@
             <h3 class="advantages-title">Мало<br>туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд<br >Каньон и толпится там</p>
           </li>
-          <li>
-            <img class="sedona" src="images/index-page/advantages-section-one/photo-2.jpg" width="800" height="385" alt="Не рукотворного моста дьявола, соединяет две скалы, проходит над пропастью.">
-          </li>
           <li class="advantages-item turquoise-background-color">
+            <img class="sedona" src="images/index-page/advantages-section-one/photo-2.jpg" width="800" height="385" alt="Не рукотворного моста дьявола, соединяет две скалы, проходит над пропастью.">
+            <div class="advantages-item">
             <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -106,7 +107,7 @@
       </section>
 
       <section class="exclamation-paragraphs-second">
-        <h2 class="visually-hidden">Поиск гостиници в Седоне</h2>
+        <h2 class="visually-hidden" hidden>Поиск гостиници в Седоне</h2>
         <p class="semantic-emphasis">Заинтересовались?</p>
         <p class="exclamation-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
@@ -122,45 +123,48 @@
           </p>
         </form>
       </section>
-      </div>
     </main>
 
     <footer class="page-footer">
+      <div class="footer-container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <h2 class="visually-hidden" hidden>Мы в соцсетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://VK.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
+              <span class="visually-hidden" hidden>ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
+              <span class="visually-hidden" hidden>Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademycom">
-              <span class="visually-hidden">Ютуб</span>
+              <span class="visually-hidden" hidden>Ютуб</span>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Телефон для связи</h2>
-        <a class="phone-for-communication" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <h2 class="visually-hidden" hidden>Телефон для связи</h2>
+        <div class="contacts-container">
+          <a class="phone-for-communication" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
       </section>
 
       <section class="footer-logo">
-        <h2 class="visually-hidden">Ссылка на страницу сайта разработчика</h2>
+        <h2 class="visually-hidden" hidden>Ссылка на страницу сайта разработчика</h2>
         <p class="logo-block-htmlacademy">
           <img class="logo-htmlacademy" src="images/footer/html-academy-icon.svg" width="115" height="33" alt="Логотип htmlacademy.">
           <a class="link-for-htmlacademy" href="https://htmlacademy.ru/">
-            <span class="visually-hidden">Ссылка на htmlacademy</span>
+            <span class="visually-hidden" hidden>Ссылка на htmlacademy</span>
           </a>
         </p>
       </section>
+      </div>
     </footer>
   </body>
 </html>
